@@ -1,0 +1,21 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Flask App{% endblock %}</title>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/admin_dashboard.js') }}"></script>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    
+    <!-- Main content block, to be overridden by child templates -->
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

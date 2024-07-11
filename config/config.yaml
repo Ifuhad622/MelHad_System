@@ -1,0 +1,16 @@
+# config.yaml
+
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: password
+  name: my_database
+
+api_keys:
+  stripe: 'your_stripe_api_key'
+  paypal: 'your_paypal_api_key'
+
+features:
+  enable_feature_x: true
+  enable_feature_y: false

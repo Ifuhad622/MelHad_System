@@ -1,0 +1,20 @@
+from flask import Flask, request, jsonify
+from config import config_by_name
+from utils import token_required, process_stripe_payment, process_airtel_payment, process_paypal_payment, process_bank_payment
+
+app = Flask(__name__)
+app.config.from_object(config_by_name['development'])
+
+@app.route('/pay/stripe', methods=['POST'])
+@token_required
+def pay_with_stripe(current_user):
+    data = request.json
+    amount = data.get('amount')
+    currency = data.get('currency', 'usd')
+    source = data.get('source')
+    description = data.get('description', '')
+    result = process_stripe_payment(amount, currency, source, description)
+    return jsonify(result)
+
+@app.route('/pay/airtel', methods=['POST'])
+@token
