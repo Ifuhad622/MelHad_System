@@ -1,16 +1,30 @@
-# config.yaml
+SECRET_KEY: 'a5d89654e803cb65eaf29dcc44b65893'
+SQLALCHEMY_DATABASE_URI: 'sqlite:///app.db'
+SQLALCHEMY_TRACK_MODIFICATIONS: False
 
-database:
-  host: localhost
-  port: 5432
-  username: admin
-  password: password
-  name: my_database
+STRIPE_PUBLIC_KEY: 'pk_test_51OiImeAcBZ0vmFyCUiOpNYupFpilMViAqQrjj3KzeEPMlcvcw77oLj91xbynAu8Kzh06OCjuHCos7G9k0CFmwz4Z00SsOUqMuJ'
+STRIPE_SECRET_KEY: 'sk_test_51OiImeAcBZ0vmFyCIAaxOuYvCwrwuDP9KgCUwKbiMGINxJYGFpOHXF3RM8wq122DujLBkTg92x1vN25nvgLXSULS00XE6VWtE3'
 
-api_keys:
-  stripe: 'your_stripe_api_key'
-  paypal: 'your_paypal_api_key'
+TWILIO_ACCOUNT_SID: 'AC61720f15666d613b344a2ae9c5c7bc6e'
+TWILIO_AUTH_TOKEN: '5024f8ba078b85b393294b62b137415b'
+TWILIO_PHONE_NUMBER: 'your_twilio_phone_number'
 
-features:
-  enable_feature_x: true
-  enable_feature_y: false
+AIRTEL_MONEY_API_KEY: 'your_airtel_money_api_key'
+AIRTEL_MONEY_SECRET_KEY: 'your_airtel_money_secret_key'
+
+PAYPAL_CLIENT_ID: 'AcZw00B3hUZSPgI7Cf6XTYJEsq85njx4VoW65XbLI5HalgZpigrlFu-QFVl6zGrKpPiIe3LvnCbnVJ5U'
+PAYPAL_CLIENT_SECRET: 'EI94BbUDGbpM6Kti7ihVE_g-FOAVENL6b6lfUpJIELisNmpzRUmNMawZO81Wz0YUPtCJEVRQwQIi6Mpl'
+
+BANK_API_KEY: 'your_bank_api_key'
+BANK_API_SECRET: 'your_bank_api_secret'
+
+DEBUG: True
+MAIL_SERVER: 'smtp.googlemail.com'
+MAIL_PORT: 587
+MAIL_USE_TLS: True
+MAIL_USERNAME: 'melhad0121@gmail.com'
+MAIL_PASSWORD: 'Fuhad@001'
+ADMINS:
+  - 'melhad0121@gmail.com'
+
+
