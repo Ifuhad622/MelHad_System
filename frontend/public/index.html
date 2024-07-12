@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MelHad Investment</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelHad Investment - E-Commerce Printing System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="/bundle.js"></script>
+
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="MelHad Logo">
+        <h1>Welcome to MelHad Investment</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h2>Your One-Stop Printing Solution</h2>
+            <p>High-quality prints delivered with exceptional service.</p>
+            <a href="#services" class="button">Explore Our Services</a>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At MelHad Investment, we specialize in providing top-notch printing services tailored to meet your business needs. Our commitment to quality and customer satisfaction sets us apart in the industry.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Order Management System</li>
+                <li>Customer Relationship Management</li>
+                <li>Digital Proofing and Approval</li>
+                <li>Inventory & Supply Chain Management</li>
+                <li>Accounting and Finance Management</li>
+                <li>Production Management</li>
+                <li>Multi-Payment Gateway Integration</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Reviews</h2>
+            <blockquote>
+                <p>"MelHad Investment provided exceptional service and high-quality prints. Highly recommend!"</p>
+                <footer>- Satisfied Customer</footer>
+            </blockquote>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Root div for React or other frameworks -->
+        <div id="root"></div>
+        <script src="/bundle.js"></script>
+    </main>
+
+    <footer>
+    <p>&copy; 2024 MelHad Investment. All rights reserved.</p>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/MelHad Investment" target="_blank">Facebook</a>
+        <a href="https://twitter.com/YourPageName" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/YourPageName" target="_blank">Instagram</a>
+
+    </div>
+    <p>Follow us at MelHad Investment for updates!</p>
+</footer>
 </body>
 </html>
